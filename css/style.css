@@ -1,0 +1,119 @@
+html, body{
+    height: 100%;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center; /* align horizontalement le contenu de body */
+    align-items: center; /* align verticalement les élements */
+    /*background: royalblue;*/
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+    font-family: Comic Sans MS;
+}
+
+form
+{
+    width:60%;      /* 60% de la largeur du conteneur (taille de la fenetre) */
+    /*margin:auto;     centrage horizontal mais peut efficace utiliser les deux rubriques ci-dessus*/
+    background: rgba(0,0,0,0.3);
+    padding:2em; /* permet d'aerer un peu le formulaire */
+    box-sizing: border-box;
+    border-radius: 1.5em;
+    box-shadow: 0.3em 0.3em 1.5em 0.2em rgba(0,0,0,0.5);
+}
+
+form label{
+    /*border:1px solid blue; pour debug */
+    width: 30%; /* il ne se passe rien (sans display : inline-block), car les labels ne sont pas des éléments de types block mais de type en ligne */
+    display: inline-block; /* permet d'être inline et block */
+    box-sizing:border-box; /* permet dans les 20% d'intégrer le 1px de la bordure */
+    vertical-align: top;
+    /*margin-top:0.4em;*/
+	color: rgb(31, 255, 56);
+	font-weight: bold;
+	text-shadow: 0.2em 0.2em 0.2em #000;
+	font-size:1.5vw;
+}
+
+form input, form select, form textarea{
+    width : 70%;
+    box-sizing:border-box;
+    height:2em;
+    line-height:2em;
+    margin-bottom: 0.7em; /* espacement entre chaque input */
+	border-radius: 1em;
+}
+
+form textarea{
+    line-height:1em;
+}
+
+form select{
+    width : 65%;
+}
+
+form #img_sexe {
+	width : 2.5%;
+	vertical-align: middle;
+}
+
+form textarea{
+    min-height:4em;
+}
+
+#zone_erreurs {
+	margin-left : 30%;
+	color:red;
+	text-shadow: 0.2em 0.2em 0.2em #000;
+	font-weight: bold;
+	font-style: italic;
+}
+
+form input[type="submit"], form input[type="button"]{ /* selectionne l'attribut submit du type input (=bt envoyer) */
+    margin:auto;
+    display:block;
+    width: 50%;
+    background: royalblue;
+    color:white;
+    border:none;
+}
+
+form input[type="password"]{
+    width:60%;
+}
+
+#entete
+{
+    width:100%;      /* 60% de la largeur du conteneur (taille de la fenetre) */
+    /*margin:auto;     centrage horizontal mais peut efficace utiliser les deux rubriques ci-dessus*/
+    padding:1em; /* permet d'aerer un peu le formulaire */
+	padding-left:0em;
+    box-sizing: border-box;
+    border-radius: 1em;
+	color: rgb(255, 255, 255);
+	font-size: 1.8vw;
+	text-shadow: 0.1em 0.1em 0.1em #c8c8c8;
+	text-align: justify;
+}
+
+/* mediaquery pour les mobiles */
+@media only screen and (max-width:500px){
+    body{
+        align-items: start;
+    }
+
+    form{
+        width:100%;
+        border-radius:0;
+    }
+	form label{
+		font-size:2.5vw;
+	}
+	#entete
+	{
+		font-size: 2.5vw;
+	}
+}

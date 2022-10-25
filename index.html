@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pronostic sur l'arrivée du bébé</title>
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link href="css/style.css" rel="stylesheet" media="all" type="text/css"> 
+    </head>
+
+    <body defer>
+		<form id="formulaire" name="formulaire" method="POST" action="verif.php" onsubmit="return verif(this);" data-netlify="true">
+			<div id="entete">
+				Dans quelques semaines et pour notre plus grand bonheur, la famille va de nouveau s'aggrandir. 
+				Pour patienter, faites vos pronostics, en remplissant le questionnaire ci-dessous.
+				<br>Bonne chance !
+				<br>Sylvana, Alex et Victor. 
+			</div><br>		
+			<label for="votre_nom">Votre Nom & Prénom </label><input type="text" id="votre_nom" name="votre_nom" >
+			<label for="prenom_bebe">Prénom du bébé</label><input type="text" id="prenom_bebe" name="prenom_bebe" >
+			<br>
+			<label for="therme">Arrivera le </label><input type="date" id="therme" name="therme">
+			<br>
+			<label for="poids">Poids (kg)</label><input type="number" id="poids" name="poids" step="0.01">
+			<br>
+			<label for="taille">Taille (cm)</label><input type="number" id="taille" name="taille" step="0.01">
+			<br>
+			<label for="sexe">Sexe </label><img id="img_sexe" src="img/fille.png"><select type="text" id = "sexe" name ="sexe" onchange="change();">
+                <option value="fille">Fille</option>
+                <option value="garcon">Garcon</option>
+            </select>
+			<br>
+			<label for="msg">Message</label><textarea type="text" id = "msg" name ="msg" maxlength=150></textarea>
+			<br>
+			<div id="zone_erreurs"></div>
+			<br>
+			<input id="bt_envoyer" class="envoyer" type="submit" value="Envoyer">
+		</form>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+    </body>
+</html>
