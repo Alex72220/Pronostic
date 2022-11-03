@@ -97,6 +97,7 @@ form input[type="password"]{
 	font-size: 1.8vw;
 	text-shadow: 0.1em 0.1em 0.1em #c8c8c8;
 	text-align: justify;
+	margin-top: 100px;
 }
 
 /* mediaquery pour les mobiles */
