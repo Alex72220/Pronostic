@@ -9,14 +9,15 @@ body{
     justify-content: center; /* align horizontalement le contenu de body */
     align-items: center; /* align verticalement les élements */
     /*background: royalblue;*/
-	background-image: url("../img/background.jpg");
-	background-size: cover;
+	/*background-image: url("../img/background.jpg");
+	background-size: cover;*/
     font-family: Comic Sans MS;
+	background: url(../img/background.jpg) no-repeat center center fixed;
 }
 
 form
 {
-    width:60%;      /* 60% de la largeur du conteneur (taille de la fenetre) */
+    width:80%;      /* 80% de la largeur du conteneur (taille de la fenetre) */
     /*margin:auto;     centrage horizontal mais peut efficace utiliser les deux rubriques ci-dessus*/
     background: rgba(0,0,0,0.3);
     padding:2em; /* permet d'aerer un peu le formulaire */
@@ -27,7 +28,7 @@ form
 
 form label{
     /*border:1px solid blue; pour debug */
-    width: 30%; /* il ne se passe rien (sans display : inline-block), car les labels ne sont pas des éléments de types block mais de type en ligne */
+    width: 40%; /* il ne se passe rien (sans display : inline-block), car les labels ne sont pas des éléments de types block mais de type en ligne */
     display: inline-block; /* permet d'être inline et block */
     box-sizing:border-box; /* permet dans les 20% d'intégrer le 1px de la bordure */
     vertical-align: top;
@@ -35,11 +36,11 @@ form label{
 	color: rgb(31, 255, 56);
 	font-weight: bold;
 	text-shadow: 0.2em 0.2em 0.2em #000;
-	font-size:1.5vw;
+	font-size:2.2vw;
 }
 
 form input, form select, form textarea{
-    width : 70%;
+    width : 60%;
     box-sizing:border-box;
     height:2em;
     line-height:2em;
@@ -52,11 +53,11 @@ form textarea{
 }
 
 form select{
-    width : 65%;
+    width : 55%;
 }
 
 form #img_sexe {
-	width : 2.5%;
+	width : 5%;
 	vertical-align: middle;
 }
 
@@ -94,10 +95,10 @@ form input[type="password"]{
     box-sizing: border-box;
     border-radius: 1em;
 	color: rgb(255, 255, 255);
-	font-size: 1.8vw;
+	font-size: 2.2vw;
 	text-shadow: 0.1em 0.1em 0.1em #c8c8c8;
 	text-align: justify;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
 /* mediaquery pour les mobiles */
