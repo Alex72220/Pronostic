@@ -9,10 +9,9 @@ body{
     justify-content: center; /* align horizontalement le contenu de body */
     align-items: center; /* align verticalement les élements */
     /*background: royalblue;*/
-	/*background-image: url("../img/background.jpg");
-	background-size: cover;*/
+	background-image: url("../img/1989940.jpg");
+	background-size: cover;
     font-family: Comic Sans MS;
-	background: url(../img/background.jpg) no-repeat center center fixed;
 }
 
 form
