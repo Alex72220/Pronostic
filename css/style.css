@@ -112,10 +112,10 @@ form input[type="password"]{
         border-radius:0;
     }
 	form label{
-		font-size:2.5vw;
+		font-size:3.0vw;
 	}
 	#entete
 	{
-		font-size: 2.5vw;
+		font-size: 3.0vw;
 	}
 }
